@@ -15,7 +15,6 @@ Bidding with ERC20 token.
 ```
 
 # Purchase
-Buying with Eth.
 ```js
     function buy(uint _id) external payable _validateBuy(_id) {
         address _previousOwner = ownerOf(_id);
