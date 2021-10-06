@@ -1271,7 +1271,7 @@ library SafeMath {
         return a % b;
     }
 }
-contract ArtNFT is ERC721URIStorage, Ownable {
+contract ArtDecoNFT is ERC721URIStorage, Ownable {
     using Address for address;
     
     address public feeAddress;
@@ -1344,7 +1344,7 @@ contract ArtNFT is ERC721URIStorage, Ownable {
         _;
     }
 
-    constructor(address _paymentToken) ERC721("ART NFTs", "ARTT") {
+    constructor(address _paymentToken) ERC721("ArtDeco NFTs", "ARTD") {
         feeAddress = _msgSender();
         paymentToken = IERC20(_paymentToken);
     }
